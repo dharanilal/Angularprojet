@@ -7,21 +7,23 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private router:Router){
+  constructor(private router: Router){
 }
 
-  title = 'Task1';
+  title = 'demo project';
   isDisabled: boolean = false;
 
   dynamicTxt:string = 'This is demo project for practice';
 
   btnClick(){
-    console.log('I was Clicked');
+    console.log('I was clicked');
   }
-  LClicked(){
-    this.router.navigate(['login']);
+
+  Login(){
+      this.router.navigate(['login']);
   }
-  DClicked(){
+
+  Dashboard(){
     this.router.navigate(['dashboard']);
   }
 }

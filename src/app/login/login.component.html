@@ -1,11 +1,52 @@
-<!-- <p>login works!</p> -->
+<!-- <p>Enter your credentials</p>
 <div>
-<label for="uname"><b>Username</b></label>
-       <input type="text" placeholder="Enter Username" name="uname" required>
+    <label for="uname"><b>Username : </b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
 <br>
 <br>
-   <label for="psw"><b>Password</b></label>
-   <input type="text" placeholder="Enter Password" name="psw" required>
-   <br>
-   <form><button (click)="login()">login</button></form>
-</div>
+    <label for="password"><b>Password : </b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    <br>
+    <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <br>
+      <br>
+    <form><button (click)="login()">login</button></form> -->
+
+ <!-- <button (click)="LClicked()">Login</button> --->
+<!-- </div> -->
+<div>
+   <form>
+     <label for="exampleInputEmail1" class="form-label">Email address</label>
+     <input type="email" [(ngModel)]="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+     <div id="emailHelp" class="form-text">Don't share your email and password with anyone else.</div>
+     <label for="exampleInputPassword1" class="form-label">Password</label>
+     <input type="password" [(ngModel)]="password" class="form-control" id="exampleInputPassword1"><br>
+     <label>
+       <input type="checkbox" checked="checked" name="remember"> Remember me
+     </label>
+     <br>
+   <button type="submit" (click)="login" class="btn btn-primary">Submit</button>
+ 
+ </form>
+ </div>
+ 
+ <!-- <p>Enter your credentials</p>
+ <div>
+     <label for="uname"><b>Username : </b></label>
+     <input type="text" placeholder="Enter Username" name="uname" required>
+ <br>
+ <br>
+     <label for="password"><b>Password : </b></label>
+     <input type="password" placeholder="Enter Password" name="password" required>
+     <br>
+     <label>
+         <input type="checkbox" checked="checked" name="remember"> Remember me
+       </label>
+       <br>
+       <br>
+     <form><button (click)="login()">login</button></form> -->
+ 
+  <!-- <button (click)="LClicked()">Login</button> --->
+ <!-- </div> -->
